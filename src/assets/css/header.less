@@ -1,0 +1,117 @@
+
+
+#head{
+    position: fixed;
+    width:@width;
+    z-index: 1000;
+    .mod_head{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width:1181/@rem;
+            padding: 0 30/@rem 0 30/@rem;
+            height:140/@rem;
+            background-color: #df3031;
+            overflow-x:auto ;
+            .head_live{
+                width: 104/@rem;
+                height: 70/@rem;
+                background:url('../img/bg.png') no-repeat 0 0;
+            }
+            .head_logo{
+                width: 300/@rem;
+                height:140/@rem;
+                background:url('../img/bg.png') no-repeat 0 -68px;
+            }
+            .head_search{
+                width:100/@rem;
+                height:140/@rem;
+                background:url('../img/bg.png') no-repeat 0 -195px;
+            }
+    }
+    .menu_box{
+        overflow:hidden;
+        position:relative;
+        height:120/@rem;
+        .head_menu{
+            width:1000%;
+            height:120/@rem;
+            padding:0 100/@rem 0 50/@rem;
+            position: absolute;
+            left:0px;
+            background-color: #fff;
+
+            li{
+                float: left;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:130/@rem;
+                height:120/@rem;
+                text-align: center;
+                margin:0 30/@rem 0 20/@rem;
+                .bigFont{
+                        font-size: 50/@rem;
+                        color:red;
+                        line-height: 130/@rem;
+                }
+                a{
+                    font-family:"微软雅黑";
+                    font-size:40/@rem;
+                    color:#ccc;
+                }
+            }
+
+        }
+    }
+    .mod_show{
+        position:absolute;
+        width:50/@rem;
+        height:120/@rem;
+        background-color: #fff;
+        left:0;
+        top:140/@rem;
+        &:after{
+            content:'';
+            display: block;
+            width:30/@rem;
+            height:120/@rem;
+            position:absolute;
+            left:45/@rem;
+            background-color:rgba(255,255,255,.7);
+        }
+    }
+    .add_title{
+                width:120/@rem;
+                height:120/@rem;
+                position:absolute;
+                left:1121/@rem;
+                top:140/@rem;
+                background-color: #fff;
+                font-size:80/@rem;
+                line-height:120/@rem;
+                color:#ccc;
+                &:before{
+                    content:'';
+                    display: block;
+                    width:80/@rem;
+                    height:120/@rem;
+                    position:absolute;
+                    left:-80/@rem;
+                    background-color:rgba(255,255,255,.7);
+                }
+        }
+    .head_push{
+        display: none;
+        width:@width;
+        height:110/@rem;
+        background-color: #e6ebf1;
+        text-align:center;
+        p{
+            font-size:30/@rem;
+            line-height:110/@rem;
+            color:#3b82ca;
+        }
+
+    }
+}

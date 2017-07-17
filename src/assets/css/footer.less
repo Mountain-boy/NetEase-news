@@ -1,0 +1,55 @@
+#foot{
+    width: @width;
+    height: 145/@rem;
+    background-color: #eeefef;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    border-top: 1px solid #d9d9d9;
+    z-index: 1000;
+    .foot_menu{
+        padding: 0 30/@rem 0 30/@rem;
+        width:1181/@rem;
+        height:145/@rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+                width:170/@rem;
+                height:145/@rem;
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content:center;
+                .foot_icon{
+                    display:block;
+                    width:65/@rem;
+                    height:60/@rem;
+                }
+                .foot_pages{
+                    background: url('../img/bg.png') no-repeat -65px -336px;
+                }
+                .foot_news{
+                    background: url('../img/bg.png') no-repeat 0px -396px;
+                }
+                .foot_live{
+                    background: url('../img/bg.png') no-repeat 0px -456px;
+                }
+                .foot_video{
+                    background: url('../img/bg.png') no-repeat 0px -515px;
+                }
+                .foot_my{
+                    background: url('../img/bg.png') no-repeat 8px -575px;
+                }
+                .foot_text{
+                    font-size:35/@rem;
+                    /* line-height: 65/@rem; */
+                }
+                .foot_active{
+                    color: #e14344;
+                }
+        }
+    }
+}
+
+
